@@ -1,0 +1,1 @@
+package com.jb.coupon_system_2.data.dto;import java.util.UUID;import lombok.Data;@Datapublic class CompanyDto {    private UUID id;    private String name;    private String email;    private String password;}

@@ -1,0 +1,1 @@
+package com.jb.coupon_system_2.mapper;import com.jb.coupon_system_2.data.dto.CompanyDto;import com.jb.coupon_system_2.data.entity.Company;import org.mapstruct.Mapper;@Mapper(componentModel = "spring")public interface CompanyMapper {    Company toEntity(CompanyDto dto);    CompanyDto toDto(Company entity);}

@@ -1,0 +1,1 @@
+package com.jb.coupon_system_2.service;public interface CouponService {    void deleteExpiredCoupons();}

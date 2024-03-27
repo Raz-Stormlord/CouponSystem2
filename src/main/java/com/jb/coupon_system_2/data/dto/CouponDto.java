@@ -1,0 +1,1 @@
+package com.jb.coupon_system_2.data.dto;import com.jb.coupon_system_2.data.entity.Company;import java.time.LocalDate;import java.util.UUID;import lombok.Data;@Datapublic class CouponDto {    private UUID id;    private String name;    private int quantity;    private LocalDate expirationDate;    private Company company;}
