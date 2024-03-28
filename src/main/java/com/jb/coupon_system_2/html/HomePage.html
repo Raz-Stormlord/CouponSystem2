@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+</head>
+<body>
+<h1>Welcome <span th:text="${userEmail}"></span></h1>
+
+<div th:if="${purchasedCoupons}">
+  <h2>Purchased Coupons:</h2>
+  <ul>
+    <li th:each="coupon : ${purchasedCoupons}">
+      <span th:text="${coupon.name}"></span>
+    </li>
+  </ul>
+</div>
+
+<button onclick="window.location.href='/coupon-page'">View Coupons</button>
+<button onclick="window.location.href='/store'">Store</button>
+<button onclick="window.location.href='/logout'">Logout</button>
+</body>
+</html>
