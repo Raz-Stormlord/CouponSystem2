@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coupon System</title>
+    <link rel="stylesheet" href="login&signup.css">
+    <script src="login&signup.js" defer></script>
+
+</head>
+<body>
+    <h1>Welcome to Raz Mega Coupon world</h1>
+    <div class="login-signin">
+        <h3>Login/Signup</h3>
+        <label for="username">Username</label>
+        <input type="email" id="username" placeholder="Enter your username"/>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password"/>
+        <div class="buttons">
+            <br>
+            <button type="button" onclick="onSignup()">Sign Up</button>
+            <button type="button" onclick="onLogin()">Login</button>
+        </div>
+    </div>
+    <br>
+    <button type="button" onclick="loadCoupons()">Home page</button>
+    <div id="coupons">
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+body{
+    margin: 5px;
+    padding: 5px;
+    background-color: #aaa;
+}
+
+.login-signin{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin:auto;
+    width:70vw;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.login-signin > .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+}
+.login-signin > input,.login-signin > label{
+    margin: 3px;
+    padding: 2px;
+}

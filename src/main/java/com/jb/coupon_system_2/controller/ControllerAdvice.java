@@ -1,6 +1,18 @@
 package com.jb.coupon_system_2.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ProblemDetail ;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.context.request.WebRequest;
+
+@org.springframework.web.bind.annotation.ControllerAdvice
 public class ControllerAdvice {
+
+    @ExceptionHandler(NoSuchCustomerException.class)
+    public ProblemDetail handleNoSuchCustomerException(NoSuchCustomerException ex, WebRequest request){
+        return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, ex.getMessage());
+    }
+
     public static class CouponAlreadyExistsException extends RuntimeException {
         public CouponAlreadyExistsException(String message) {
             super(message);
