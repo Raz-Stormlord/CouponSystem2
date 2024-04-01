@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Coupon System</title>
-    <link rel="stylesheet" href="login&signup.css">
-    <script src="login&signup.js" defer></script>
+    <link rel="stylesheet" href="auth.css">
+    <script src="auth.js" defer></script>
 
 </head>
 <body>
@@ -12,9 +12,11 @@
     <div class="login-signin">
         <h3>Login/Signup</h3>
         <label for="username">Username</label>
-        <input type="email" id="username" placeholder="Enter your username"/>
+        <input type="email" id="username" placeholder="Enter your username"
+        value="abc123@gmail.com"/>
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter your password"/>
+        <input type="password" id="password" placeholder="Enter your password"
+        value="123asd"/>
         <div class="buttons">
             <br>
             <button type="button" onclick="onSignup()">Sign Up</button>
@@ -24,8 +26,6 @@
     <br>
     <button type="button" onclick="loadCoupons()">Home page</button>
     <div id="coupons">
-
     </div>
-
 </body>
 </html>

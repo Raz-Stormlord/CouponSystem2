@@ -8,4 +8,22 @@ function getUsername() {
         usernameDisplay.textContent = 'Welcome!';
     }
 }
-getUsername()
+
+function getCustomerCoupons(){
+    const token = localStorage.getItem("token");
+    const url = `http://localhost:8080/api/customer/all/purchased/${token}`;
+    fetch(url ).then( response =>{
+        if(response.status >= 400){
+            console.log(response)
+            throw new Error()
+        }
+        return response.json(); // convert json to js object
+    } ).then( data => {
+        console.log("coupon list", data)
+    }).catch( err => {
+        console.log(err);
+        alert("Error retrieving the coupons")
+    })
+}
+getUsername();
+getCustomerCoupons();

@@ -1,0 +1,28 @@
+#coupons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#coupons > .coupon {
+    flex-basis: calc(33.33% - 20px); /* Adjust the width based on your preference */
+    height: auto; /* Adjust the height based on your preference */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px 3px 2px #444;
+    padding: 5px;
+    overflow: visible;
+}
+
+#coupons > .coupon img {
+    width: 10vw;
+    max-width: 100%;
+}
+
+#coupons > .coupon > div {
+    text-align: center;
+    word-wrap: break-word;
+}
