@@ -17,7 +17,7 @@ function getCustomerCoupons(){
             console.log(response)
             throw new Error()
         }
-        return response.json(); // convert json to js object
+        return response.json();
     } ).then( data => {
         console.log("coupon list", data)
     }).catch( err => {

@@ -19,9 +19,6 @@ function getNotPurchasedCustomerCoupons(){
             expiration.innerHTML = `<strong>Expiration Date:</strong> ${c.expirationDate}`;
             const quantity = document.createElement('span')
             quantity.innerHTML = `<strong>Quantity:</strong> ${c.quantity}`;
-            const img = document.createElement('img');
-            img.src = "https://cdn.dribbble.com/users/3846/screenshots/16458040/media/18f2cd963887fb1500bea1fba98c9fea.png"
-            div.appendChild(img);
             detailsDiv.appendChild(h2);
             detailsDiv.appendChild(expiration);
             detailsDiv.appendChild(quantity);
@@ -33,5 +30,4 @@ function getNotPurchasedCustomerCoupons(){
         alert("Error retrieving the coupons")
     })
 }
-
 getNotPurchasedCustomerCoupons();
