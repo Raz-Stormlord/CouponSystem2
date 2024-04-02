@@ -23,7 +23,7 @@ function getNotPurchasedCustomerCoupons(){
             detailsDiv.appendChild(expiration);
             detailsDiv.appendChild(quantity);
             div.appendChild(detailsDiv);
-            div.classL ist.add("coupon")
+            div.classList.add("coupon")
             coupons.appendChild(div)
         }
     }).catch( err => {

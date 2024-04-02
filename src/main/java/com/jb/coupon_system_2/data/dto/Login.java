@@ -11,10 +11,9 @@ public class Login {
     }
 
     public Login() {
-        //login = new login
     }
 
-    public void setUsername(String username) {
+    public void setEmail(String username) {
         this.username = username;
     }
 
