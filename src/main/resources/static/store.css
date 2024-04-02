@@ -7,12 +7,13 @@ body{
 #coupons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 #coupons > .coupon {
-    width: 30px;
-    height: 20px;
+    background-color: white;
+    width: 15vw;
+    height: auto;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -21,9 +22,4 @@ body{
     box-shadow: 3px 3px 2px #444;
     padding: 5px;
     overflow: visible;
-}
-
-#coupons > .coupon > div {
-    text-align: center;
-    word-wrap: break-word;
 }
